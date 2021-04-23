@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  
+  height: 70px;
+  font-family: "Lobster", cursive;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h5{
+    margin-top:-25px;
+}
+
+
+
+#image-holder{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/guitar.jpg");
+    background-size:contain;
+    background-size:cover;
+    height:90vh;
+    width:100vw;
+}
+
+.action-button{
+    height:50px;
+    width:250px;
+    background-color:#b4e2d7;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    font-family: 'Orelega One', cursive;
+    box-shadow: 1px 1px 2px grey;
+}
+
+#how-it-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Orelega One', cursive;
+    width:100%;
+}
+#how-it-works h2{
+    font-size:45px;
+}
+#how-it-works p{
+    width:95%;
+    text-align: center;
+}
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+    width:100%;
+   
+}
+
+.steps h3{
+    border-bottom:4px solid #b4e2d7;
+    font-size:30px;
+}
+.how-it-works-img{
+    height:200px;
+    width:200px;
+    border-radius: 100%;
+    margin-top:20px;
+ 
+   
+}
+
+/*statement section*/
+#statement{
+    height:300px;
+    width:100%;
+    background-color:#b4e2d7;
+    font-family: 'Orelega One', cursive;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    flex-wrap: wrap;
+  
+
+}
+
+blockquote{
+    font-size:50px;
+    width:70%;
+}
+#statement p{
+    margin-top:-30px;
+}
+
+/*footer*/
+footer{
+   height:50px;
+   width:100%;
+   background-color:black;
+}
