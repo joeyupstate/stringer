@@ -127,9 +127,14 @@ a{
 blockquote {
   font-size: 40px;
   width: 70%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #statement p {
-  margin-top: -30px;
+  margin-top: 30px;
+  font-size:20px;
 }
 
 
@@ -149,6 +154,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 
 }
 
@@ -156,6 +162,9 @@ footer {
   display: flex;
   flex-direction: row;
   width: 60%;
+  
+  justify-content: center;
+  align-items: center;
 
 }
 #footer-menu p {

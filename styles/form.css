@@ -124,3 +124,18 @@ footer {
   margin-top:10px;
 }
 
+@media screen and (min-width: 700px) {
+
+  form {
+    width: 90%;
+    max-width:650px;
+    background-color: rgb(233, 245, 69);
+    height: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    padding:20px;
+  
+    
+  }
+}
+  
