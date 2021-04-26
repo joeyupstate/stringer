@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins&display=swap");
 * {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -19,17 +19,60 @@ body {
 }
 
 header {
-  
-  height: 70px;
+  height: 75px;
   font-family: "Lobster", cursive;
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom:2px solid black;
 }
 
-header h5{
-    margin-top:-25px;
+header h1 {
+  font-size: 40px;
+}
+header h5 {
+  margin-top: -5px;
+}
+#image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/guitar.jpg");
+  background-size: contain;
+  background-size: cover;
+  height: 90vh;
+  width: 100vw;
+}
+
+.action-button {
+  height: 60px;
+  width: 270px;
+  background-color: rgb(233, 245, 69);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "Orelega One", cursive;
+  box-shadow: 0px 2px 3px rgb(194, 193, 193);
+  color: black;
+  margin-top: 30px;
+}
+.action-button h2 {
+  font-size: 35px;
+}
+
+form {
+  width: 90%;
+  background-color: white;
+  height: 500px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form label {
+  color: rgb(233, 245, 69);
+  font-family: "Orelega One", cursive;
+  font-size: 20px;
 }
