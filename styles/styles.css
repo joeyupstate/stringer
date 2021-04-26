@@ -49,21 +49,29 @@ header h5 {
   height: 90vh;
   width: 100vw;
 }
-
+a{
+  text-decoration: none;
+  color:black;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .action-button {
   height: 60px;
   width: 270px;
   background-color: rgb(233, 245, 69);
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   font-family: "Orelega One", cursive;
   box-shadow: 0px 2px 3px rgb(194, 193, 193);
   color: black;
-  margin-top: 30px;
+  margin-top: 60px;
 }
+
 .action-button h2 {
   font-size: 35px;
 }
@@ -82,20 +90,12 @@ header h5 {
   text-align: center;
 }
 
-.guitar-icon {
-  height: 80px;
-  width: 80px;
-  margin: 0 auto;
-}
+
 #how-it-works p {
   width: 95%;
   text-align: center;
 }
-.arrow-icon {
-  height: 150px;
-  width: 150px;
-  display: none;
-}
+
 .steps {
   display: flex;
   justify-content: center;
@@ -109,14 +109,9 @@ header h5 {
   border-bottom: 4px solid rgb(233, 245, 69);
   font-size: 30px;
 }
-.how-it-works-img {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  margin-top: 20px;
-}
 
-/*statement section*/
+
+/*-------------------------statement section--------------------------*/
 #statement {
   height: 300px;
   width: 100%;
@@ -130,14 +125,16 @@ header h5 {
 }
 
 blockquote {
-  font-size: 50px;
+  font-size: 40px;
   width: 70%;
 }
 #statement p {
   margin-top: -30px;
 }
 
-/*footer*/
+
+
+/*-------------------footer---------------------------*/
 footer {
   height: 50px;
   width: 100%;
@@ -148,20 +145,51 @@ footer {
   font-family: "Orelega One", cursive;
 }
 #copyright {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #footer-menu {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
+
 }
 #footer-menu p {
   margin-left: 3px;
 }
+
+
+
+
+/* ---------------icons and images-------------- */
+
+.how-it-works-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+
+.arrow-icon {
+  height: 150px;
+  width: 150px;
+  display: none;
+}
+
+#guitar-icon{
+  height:35px;
+  width:35px;
+  margin-bottom:5px;
+}
+
+
+
+/*----------------------------media quieres ----------------------------------------------*/
+
 @media screen and (min-width: 1200px) {
   #how-it-works {
     flex-direction: row;
@@ -193,6 +221,48 @@ footer {
 
   .arrow-icon {
     display: block;
+  }
+
+  #how-it-works p {
+    width: 50%;
+  }
+}
+
+
+/*-----big desktop ---------*/
+
+@media screen and (min-width: 1700px) {
+  #how-it-works {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  header {
+    height: 100px;
+    font-family: "Lobster", cursive;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+  header h5 {
+    margin-top: -30px;
+    font-size: 20px;
+  }
+
+  .steps {
+    width: 25%;
+  }
+
+  .arrow-icon {
+    display: none;
+    
   }
 
   #how-it-works p {
