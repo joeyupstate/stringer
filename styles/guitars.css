@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(233, 245, 69);;
+  background-color: white;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   background-color: white !important;
 }
 
@@ -42,9 +42,9 @@ header h5 {
   margin-top: -30px;
 }
 
-#guitar-title{
+#guitar-title {
   font-family: "Orelega One", cursive;
-  border-bottom: 4px solid #26716f;
+  border-bottom: 4px solid rgb(233, 245, 69);
 }
 
 a {
@@ -59,13 +59,13 @@ a {
 /*--------------------*/
 
 #guitar-card-holder {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color:   rgb(233, 245, 69);
-  width:100%;
-  border:none;
+  background-color: white;
+  width: 100%;
+  border: none;
 }
 
 .guitar-card {
@@ -77,10 +77,9 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  border:4px solid #26716f;
+  border: 4px solid rgb(240, 237, 237);
   border-radius: 5px;
 }
-
 
 .guitar-photos {
   height: 80%;
@@ -92,44 +91,42 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:white;
+  background-color: white;
   flex-direction: column;
   text-align: center;
   font-family: "Orelega One", cursive;
 
   border-top: none;
- 
 }
 
-.guitar-name{
-  width:100%;
-  display:flex;
+.guitar-name {
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
-  height:50%;
-  border-bottom:1px solid rgb(216, 215, 215);
+
+  height: 50%;
+  border-bottom: 1px solid rgb(216, 215, 215);
 }
-.guitar-price{
-  width:100%;
-  display:flex;
+.guitar-price {
+  width: 100%;
+  display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: row;
- 
-  height:50%;
+
+  height: 50%;
 }
 
-.search-icon{
-  height:25px;
-  width:25px;
-  margin-top:10px;
-  margin-right:10px;
+.search-icon {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.guitar-price p{
-  margin-left:10px;
-
+.guitar-price p {
+  margin-left: 10px;
 }
 
 /*-------------------footer---------------------------*/
@@ -141,46 +138,40 @@ footer {
   display: flex;
   flex-direction: row;
   font-family: "Orelega One", cursive;
-  margin-top:50px;
+  margin-top: 50px;
 }
 #copyright {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
 }
 
 #footer-menu {
   display: flex;
   flex-direction: row;
   width: 60%;
-  
+
   justify-content: center;
   align-items: center;
-
 }
 #footer-menu p {
   margin-left: 3px;
 }
 
-
 @media screen and (min-width: 1200px) {
-
   #guitar-card-holder {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color:  white;
-    width:100%;
-    border:2px solid rgb(233, 245, 69);
-    width:100%;
+    background-color: white;
+    width: 100%;
+    border: 2px solid rgb(233, 245, 69);
+    width: 100%;
   }
-.guitar-card{
-  margin:40px;
-}
-
+  .guitar-card {
+    margin: 40px;
+  }
 }

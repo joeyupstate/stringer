@@ -49,10 +49,10 @@ header h5 {
   height: 90vh;
   width: 100vw;
 }
-a{
+a {
   text-decoration: none;
-  color:black;
-    display: flex;
+  color: black;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,6 @@ a{
   text-align: center;
 }
 
-
 #how-it-works p {
   width: 95%;
   text-align: center;
@@ -110,6 +109,20 @@ a{
   font-size: 30px;
 }
 
+#guitar-action-button {
+  height: 30px;
+  width: 120px;
+  background-color: blue;
+  font-family: "Orelega One", cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px grey;
+}
 
 /*-------------------------statement section--------------------------*/
 #statement {
@@ -127,17 +140,15 @@ a{
 blockquote {
   font-size: 40px;
   width: 70%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 #statement p {
   margin-top: 30px;
-  font-size:20px;
+  font-size: 20px;
 }
-
-
 
 /*-------------------footer---------------------------*/
 footer {
@@ -154,25 +165,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
 }
 
 #footer-menu {
   display: flex;
   flex-direction: row;
   width: 60%;
-  
+
   justify-content: center;
   align-items: center;
-
 }
 #footer-menu p {
   margin-left: 3px;
 }
-
-
-
 
 /* ---------------icons and images-------------- */
 
@@ -189,13 +194,11 @@ footer {
   display: none;
 }
 
-#guitar-icon{
-  height:35px;
-  width:35px;
-  margin-bottom:5px;
+#guitar-icon {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 5px;
 }
-
-
 
 /*----------------------------media quieres ----------------------------------------------*/
 
@@ -237,7 +240,6 @@ footer {
   }
 }
 
-
 /*-----big desktop ---------*/
 
 @media screen and (min-width: 1700px) {
@@ -271,7 +273,6 @@ footer {
 
   .arrow-icon {
     display: none;
-    
   }
 
   #how-it-works p {
