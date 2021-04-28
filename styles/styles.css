@@ -23,15 +23,31 @@ body {
 }
 
 header {
-  height: 75px;
+  height: 100px;
   font-family: "Lobster", cursive;
   width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+margin:0 auto;
 
+}
+#icon-holder{
+
+justify-self: start;
+display:flex;
+margin-left:20px;
+}
 header h1 {
   font-size: 40px;
 }
@@ -200,6 +216,15 @@ footer {
   margin-bottom: 5px;
 }
 
+.social-icons{
+  height:30px;
+  width:30px;
+  opacity:0.5;
+  margin:10px;
+
+
+}
+
 /*----------------------------media quieres ----------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
@@ -214,10 +239,27 @@ footer {
     font-family: "Lobster", cursive;
     width: 100%;
     display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+   
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+margin:0 auto;
+
   }
+#icon-holder{
+
+justify-self: start;
+display:flex;
+margin-left:20px;
+}
 
   header h1 {
     font-size: 50px;
@@ -254,11 +296,27 @@ footer {
     font-family: "Lobster", cursive;
     width: 100%;
     display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+   
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+margin:0 auto;
 
+  }
+#icon-holder{
+
+justify-self: start;
+display:flex;
+margin-left:20px;
+}
   header h1 {
     font-size: 50px;
   }

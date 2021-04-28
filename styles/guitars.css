@@ -168,7 +168,10 @@ footer {
     flex-wrap: wrap;
     background-color: white;
     width: 100%;
-    border: 2px solid rgb(233, 245, 69);
+    border-right: 2px solid rgb(233, 245, 69);
+    border-left: 2px solid rgb(233, 245, 69);
+    border-top: none;
+    border-bottom: none;
     width: 100%;
   }
   .guitar-card {
