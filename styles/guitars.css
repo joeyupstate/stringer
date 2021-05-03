@@ -131,23 +131,86 @@ a {
 
 /*-----------enlarged card-----------*/
 #enlarged-card {
-  height: 100vh;
-  width: 100vh;
-  background-color: red;
+  height: 100%;
+  width: 90%;
+  max-width:650px;
+  border:2px solid rgb(240, 236, 236);
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  border-radius:10px;
+  padding:5px;
+
+
+
+}
+#enlarged-card h4{
+  font-family: "Orelega One", cursive;
+
+}
+
+#enlarged-card h3{
+  color:red;
+
+}
+#enlarged-card span{
+  
+
+  font-weight: bold;
+}
+#closer-container{
+
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:100%;
+}
+#enlarged-card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#enlarged-title{
+  font-family: "Orelega One", cursive;
+
 }
 
 #enlarged-image {
   height: 70vh;
-  width: 300px;
+  width: 100%;
+}
+#close {
+  height: 15px;
+  width: 15px;
+  margin-top:10px;
+  margin-right:10px;
+  
+}
+.action-button {
+  height: 60px;
+  width: 270px;
+  background-color: rgb(233, 245, 69);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  font-family: "Orelega One", cursive;
+  box-shadow: 0px 2px 3px rgb(194, 193, 193);
+  color: black;
+  margin-top: 60px;
 }
 
-#close {
-  height: 30px;
-  width: 30px;
+.action-button h2 {
+  font-size: 25px;
+}
+#guitar-icon {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 5px;
 }
 /*-------------------footer---------------------------*/
 footer {
@@ -179,6 +242,77 @@ footer {
   margin-left: 3px;
 }
 
+@media screen and (min-width:650px){
+  #enlarged-card {
+    height: 100%;
+    width: 90%;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+  #closer-container{
+  
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+  }
+  #enlarged-card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  #enlarged-title{
+    font-family: "Orelega One", cursive;
+  
+  }
+  
+  #enlarged-image {
+    height: 90vh;
+    width: 100%;
+  }
+  #close {
+    height: 15px;
+    width: 15px;
+    
+  }
+
+  /*--------------footer*---------*/
+  footer {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: "Orelega One", cursive;
+    margin-top: 180px;
+  }
+  #copyright {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer-menu {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  #footer-menu p {
+    margin-left: 3px;
+  }
+
+}
 @media screen and (min-width: 1200px) {
   #guitar-card-holder {
     display: flex;

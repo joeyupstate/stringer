@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/guitars.css" />
+    
   </head>
   <body>
     <header>
@@ -21,12 +22,27 @@
     </header>
     
     <h1 id="guitar-title">Our Guitars</h1>
+    <!-- THIS IS THE ENLARGED CARD THAT IS HIDDEN UNLESS CLICKED ON-->
+  
     <div id="enlarged-card">
-      <img src="./assets/close.png" id="close">
+      <div id="closer-container">
+        <img src="./assets/close.png" id="close">
+      </div>
+      
+      <div id="enlarged-card-container">
       <div id="enlarged-title"></div>
-<img src="" id="enlarged-image">
+     <img src="" id="enlarged-image">
+     <h3>This Guitar Is Available</h3>
+     <h4>Year</h4><span id="year">2010</span>
+     <h4>Orientation</h4><span id="orientation">Right Handed</span>
+     <div id="description"><h4>Description:</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente expedita vero voluptate aliquam praesentium, blanditiis dolor impedit at architecto obcaecati accusantium quae eos accusamus non numquam eligendi. Odit, minima!</p></div>
+     <div class="action-button"><h2>Rent This Guitar</h2> <img src="./assets/guitar-icon.png" id="guitar-icon"></div>
+      </div>
       </div>
 
+
+
+      <!--MAIN VISIBLE GUITAR CARD SECTION-->
     <div id="guitar-card-holder">
 
       <div class="guitar-card">
@@ -206,36 +222,6 @@
           <p>Careers</p>
       </div>
   </footer>
-  <script>
-    const closer = document.getElementById("close")
-    const enlargedImage =document.getElementById("enlarged-image")
-    const enlargedTitle = document.getElementById("enlarged-title")
-    const pageContainer = document.getElementById("guitar-card-holder")
-    const enlargedCard = document.getElementById("enlarged-card")
-    const search = document.querySelectorAll(".search-icon")
-  const guitarPhotos= document.querySelectorAll(".guitar-photos")
-  const guitarCard = document.querySelectorAll(".guitar-card")
-    for(let i = 0; i < search.length; i++){
-      guitarCard[i].addEventListener("click",function(){
-
-
-enlargedCard.style.display="flex"
-pageContainer.style.display="none";
-let source = this.firstChild.nextSibling.src
-let name =this.firstChild.nextSibling.nextElementSibling.children[0].innerHTML;
-
-enlargedTitle.innerHTML=name
-enlargedImage.src=source;
-
-      })
-    }
-
-  closer.addEventListener("click",function(){
-    enlargedCard.style.display="none"
-    pageContainer.style.display="flex"
-  })
-       
-
-  </script>
+  <script src="index.js"></script>
   </body>
 </html>
