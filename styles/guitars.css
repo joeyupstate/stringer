@@ -129,6 +129,26 @@ a {
   margin-left: 10px;
 }
 
+/*-----------enlarged card-----------*/
+#enlarged-card {
+  height: 100vh;
+  width: 100vh;
+  background-color: red;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#enlarged-image {
+  height: 70vh;
+  width: 300px;
+}
+
+#close {
+  height: 30px;
+  width: 30px;
+}
 /*-------------------footer---------------------------*/
 footer {
   height: 50px;
