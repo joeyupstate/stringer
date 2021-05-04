@@ -102,10 +102,10 @@ a {
   color: black;
   margin-top: 60px;
 
-}
 
-.action-button { &hover + #guitar-icon{
-  transform:rotate(-45deg)
+
+  &:hover + #guitar-icon{
+  transform:rotate(-45deg);
 }
 }
 

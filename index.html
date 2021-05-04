@@ -101,24 +101,24 @@
     </footer>
 <script>
 
-//animations 
+  const button = document.querySelectorAll(".action-button");
+  const icon = document.getElementById("guitar-icon")
 
-
-
-function waitBeforeNavigate(ev) {
-    ev.preventDefault();  
+    function waitBeforeNavigate(ev) {
+      ev.preventDefault();  
+      
+      icon.style.transform = "rotate(-45deg)"
+      const goTo = this.getAttribute("href"); 
     
-const goTo = this.getAttribute("href"); 
-  
-   setTimeout(function(){
-      window.location = goTo;
-    }, 1000);                               
-  }; 
-  
-  document.querySelectorAll("a")
-    .forEach(EL => EL.addEventListener("click", waitBeforeNavigate));
-
-
-</script>
+    
+    
+      setTimeout(function(){
+        window.location = goTo;
+      }, 500);                               
+    }; 
+    
+    document.querySelectorAll("a")
+      .forEach(EL => EL.addEventListener("click", waitBeforeNavigate));
+  </script>
   </body>
 </html>
