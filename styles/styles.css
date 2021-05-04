@@ -61,12 +61,23 @@ header h5 {
 #image-holder {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-image: url("../assets/guitar.jpg");
+  background-image: url("../assets/guitar2.jpg");
   background-size: contain;
   background-size: cover;
   height: 90vh;
   width: 100vw;
+  flex-wrap: wrap;
+}
+#slogan{
+ color: rgb(233, 245, 69);
+ font-family: "Orelega One", cursive;
+ font-size: 50px;
+ max-width:90%;
+
+ 
+
 }
 a {
   text-decoration: none;
@@ -77,6 +88,7 @@ a {
   align-items: center;
 }
 .action-button {
+  
   height: 60px;
   width: 270px;
   background-color: rgb(233, 245, 69);
@@ -89,6 +101,17 @@ a {
   box-shadow: 0px 2px 3px rgb(194, 193, 193);
   color: black;
   margin-top: 60px;
+
+}
+
+.action-button { &hover + #guitar-icon{
+  transform:rotate(-45deg)
+}
+}
+
+
+.box {
+  transition: transform 330ms ease-in-out;
 }
 
 .action-button h2 {
@@ -217,6 +240,7 @@ footer {
   height: 35px;
   width: 35px;
   margin-bottom: 5px;
+  transition: transform 330ms;
 }
 
 .social-icons{

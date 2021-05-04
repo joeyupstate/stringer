@@ -17,13 +17,13 @@
    
       <a href="index.html">
       <h1>Stringer</h1>
-      <h5>Guitar Rental</h5>
+      <h5>Guitar Share</h5>
       </a>
     </header>
     
     
     <div id="image-holder">
-
+<h2 id="slogan">Because music is ment to be shared</h2>
     <a href="form.html">
       <div class="action-button"><h2>Get Started</h2> <img src="./assets/guitar-icon.png" id="guitar-icon"></div>
     </div>
@@ -99,6 +99,26 @@
             <p>Careers</p>
         </div>
     </footer>
-    <script src="" async defer></script>
+<script>
+
+//animations 
+
+
+
+function waitBeforeNavigate(ev) {
+    ev.preventDefault();  
+    
+const goTo = this.getAttribute("href"); 
+  
+   setTimeout(function(){
+      window.location = goTo;
+    }, 1000);                               
+  }; 
+  
+  document.querySelectorAll("a")
+    .forEach(EL => EL.addEventListener("click", waitBeforeNavigate));
+
+
+</script>
   </body>
 </html>
