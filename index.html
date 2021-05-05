@@ -10,7 +10,10 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+
     <link rel="stylesheet" href="./styles/styles.css">
+    
   </head>
   <body>
     <header>
@@ -19,13 +22,24 @@
       <h1>Stringer</h1>
       <h5>Guitar Share</h5>
       </a>
+  
+        <img src="assets/menu.png" class="hamburger-icon" />
+        
+        <nav class="nav">
+          
+          <ul>
+            <li>About</li>
+            <a href="files/resume.pdf" id="resume-link"><li>Guitars</li></a>
+            <li>Sign Up</li>
+          </ul>
+          <img src="assets/close.png" class="close-icon" />
     </header>
     
     
     <div id="image-holder">
-<h2 id="slogan">Because music is ment to be shared</h2>
-    <a href="form.html">
-      <div class="action-button"><h2>Get Started</h2> <img src="./assets/guitar-icon.png" id="guitar-icon"></div>
+<h2 id="slogan"></h2>
+    <a href="guitars.html">
+      <div class="action-button"><h2>See Guitars</h2> <img src="./assets/guitar-icon.png" id="guitar-icon"></div>
     </div>
   </a>
 
@@ -104,7 +118,7 @@
   const button = document.querySelectorAll(".action-button");
   const icon = document.getElementById("guitar-icon")
 
-    function waitBeforeNavigate(ev) {
+function waitBeforeNavigate(ev) {
       ev.preventDefault();  
       
       icon.style.transform = "rotate(-45deg)"
@@ -116,9 +130,11 @@
         window.location = goTo;
       }, 500);                               
     }; 
-    
     document.querySelectorAll("a")
       .forEach(EL => EL.addEventListener("click", waitBeforeNavigate));
+
+      
   </script>
+  <script src="nav.js"></script>
   </body>
 </html>
