@@ -100,7 +100,7 @@ margin:0 auto;
 
 .nav ul {
   list-style: none;
-  color: black;
+
   font-size: 20px;
   font-family: "Orelega One", cursive;
  
@@ -114,7 +114,7 @@ margin:0 auto;
   display: block;
   font-family: "Orelega One", cursive;
   text-align: center;
-  
+  color:black;
   text-align: left;
   
 }
@@ -190,11 +190,25 @@ a {
 
 
 
+
   &:hover + #guitar-icon{
   transform:rotate(-45deg);
 }
 }
 
+.action-button:hover{
+  background-color:rgb(238, 255, 1);
+  transition:.4s all ease;
+
+  
+}
+
+.action-button:focus{
+  background-color:rgb(238, 255, 1);
+  transition:.4s all ease;
+  
+
+}
 
 .box {
   transition: transform 330ms ease-in-out;
@@ -250,6 +264,11 @@ a {
   border-radius: 10px;
   padding: 10px;
   box-shadow: 1px 1px 1px grey;
+}
+
+#guitar-action-button:hover{
+  background-color: rgb(69, 69, 252);
+  transition:.4s all ease;
 }
 
 /*-------------------------statement section--------------------------*/
